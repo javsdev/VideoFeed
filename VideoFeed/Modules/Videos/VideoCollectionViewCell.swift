@@ -34,6 +34,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
         playerView!.player = player
         playerView!.frame = contentView.bounds
         playerView!.videoGravity = .resizeAspectFill
+        player?.volume = 0
         contentView.layer.addSublayer(playerView!)
         player?.play()
     }
